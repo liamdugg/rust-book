@@ -52,7 +52,7 @@ fn main() {
     // to a function that requires a Point struct it wont work.
 
     // Unit-Like structs
-    struct AlwaysEqual;
+    // struct AlwaysEqual;
     
     // can be useful when you need to implement a trait on some type but 
     // don’t have any data that you want to store in the type itself.

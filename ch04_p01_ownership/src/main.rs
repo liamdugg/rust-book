@@ -79,9 +79,11 @@ fn main() {
     
     {
         let r1 = &mut s;
+        println!("{r1}");
     } // r1 goes out of scope here, so we can make a new reference with no problems
     
     let r2 = &mut s;
+    println!("{r2}");
 
     // a reference scope start from where it is introduces until the last time its used.
     let mut s = String::from("hello");
@@ -102,6 +104,9 @@ fn main() {
 
     let hello = &s[0..5];
     let world = &s[6..11];
+
+    println!("{hello}");
+    println!("{world}");
 
     // this does not create other variables in the heap
     // as slices are still references

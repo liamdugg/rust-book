@@ -19,7 +19,7 @@ enum IpAddr2 {
 
 enum Message {
     Quit,
-    Move { x: i32, y: i32 },
+    //Move { x: i32, y: i32 },
     Write(String),
     ChangeColor(i32, i32, i32),
 }
@@ -51,7 +51,7 @@ fn main() {
     m.call();
 
     let _q = Message::Quit;
-    let _move = Message::Move { x: 4, y: 2 };
+    //let _move = Message::Move { x: 4, y: 2 };
     let _color = Message::ChangeColor(4, 2, 1);
 
     // Option<T> { None, Some(T)}

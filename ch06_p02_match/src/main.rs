@@ -33,7 +33,7 @@ fn main() {
 
     value = value_in_cents(quarter2);
     println!("Quarter in cents: {value}");
-
+ 
 
     let five = Some(5);
     let six = plus_one(five);
